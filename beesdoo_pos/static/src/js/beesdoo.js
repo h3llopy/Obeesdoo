@@ -64,7 +64,7 @@ odoo.define('beesdoo_pos.screens', function (require) {
                     set_customer_info.call(self, '.customer-delegate2', result[1], 'Eater 2: ');
                     set_customer_info.call(self, '.customer-delegate3', result[2], 'Eater 3: ');
                 }).fail(function (type, error){
-                    loaded.reject(err);
+                    loaded.reject(error);
                 });
         },
         renderElement : function() {
